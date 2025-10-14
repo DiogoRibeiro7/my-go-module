@@ -1,7 +1,7 @@
 version: 2
 updates:
-  # Python dependencies
-  - package-ecosystem: "pip"
+  # Go modules (root module)
+  - package-ecosystem: "gomod"
     directory: "/"
     schedule:
       interval: "weekly"
@@ -10,8 +10,7 @@ updates:
       - "diogoribeiro7"
     labels:
       - "dependencies"
-
-  # GitHub Actions
+      - "go"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
